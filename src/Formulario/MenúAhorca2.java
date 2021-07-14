@@ -14,6 +14,8 @@ public class MenúAhorca2 extends javax.swing.JFrame {
     /**
      * Creates new form MenúAhorca2
      */
+    
+    
     public MenúAhorca2() {
         initComponents();
     }
@@ -169,9 +171,9 @@ public class MenúAhorca2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBFacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBFacilActionPerformed
-        DiseñoAhorca2 p1 = new DiseñoAhorca2();
+        DiseñoAhorca2 pl = new DiseñoAhorca2();
         this.setVisible(false);
-        p1.setVisible(true);
+        pl.setVisible(true);
     }//GEN-LAST:event_jBFacilActionPerformed
 
     private void jBMedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBMedioActionPerformed

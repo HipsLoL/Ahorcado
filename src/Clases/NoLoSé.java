@@ -9,6 +9,14 @@ package Clases;
  *
  * @author Eduva
  */
-public class UnaClaseCualquieraPorHoy {
-    
+public class NoLoSé {
+
+    public static int getOpcion() {
+        return opcion;
+    }
+
+    public static void setOpcion(int aOpcion) {
+        opcion = aOpcion;
+    }
+    private static int opcion = 0;
 }
