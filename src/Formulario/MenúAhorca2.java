@@ -203,7 +203,9 @@ public class MenúAhorca2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jBSalirActionPerformed
 
     private void jBInstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBInstruccionesActionPerformed
-        // TODO add your handling code here:
+        instrucciones p1 = new instrucciones();
+        this.setVisible(false);
+        p1.setVisible(true);
     }//GEN-LAST:event_jBInstruccionesActionPerformed
 
     /**
