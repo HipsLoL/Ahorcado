@@ -18,6 +18,7 @@ public class MenúAhorca2 extends javax.swing.JFrame {
     
     public MenúAhorca2() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -43,6 +44,7 @@ public class MenúAhorca2 extends javax.swing.JFrame {
         jBInstrucciones = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(449, 348));
