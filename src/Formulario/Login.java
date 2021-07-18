@@ -19,7 +19,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         this.setLocationRelativeTo(null);
-        MenúAhorca2 recibir = new MenúAhorca2();
+        MenuAhorca2 recibir = new MenuAhorca2();
     }
 
     /**
@@ -113,7 +113,7 @@ public class Login extends javax.swing.JFrame {
                 String nombreUsu = String.valueOf(jTNombreU.getText());
                 usuario.setNombreU(nombreUsu);
                 
-                MenúAhorca2 p1 = new MenúAhorca2();
+                MenuAhorca2 p1 = new MenuAhorca2();
                 this.setVisible(false);
                 p1.setVisible(true);
             }

@@ -10,7 +10,7 @@ import Clases.Usuario;
  *
  * @author Eduva
  */
-public class MenúAhorca2 extends javax.swing.JFrame {
+public class MenuAhorca2 extends javax.swing.JFrame {
 
     Usuario usuario = new Usuario();
     /**
@@ -18,7 +18,7 @@ public class MenúAhorca2 extends javax.swing.JFrame {
      */
     
     
-    public MenúAhorca2() {
+    public MenuAhorca2() {
         initComponents();
         this.setLocationRelativeTo(null);
         
@@ -131,7 +131,7 @@ public class MenúAhorca2 extends javax.swing.JFrame {
                                 .addGap(33, 33, 33)
                                 .addComponent(jBTeam))
                             .addComponent(jBInstrucciones, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,7 +157,7 @@ public class MenúAhorca2 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jBTeam))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -175,25 +175,25 @@ public class MenúAhorca2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBFacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBFacilActionPerformed
-        DiseñoAhorca2 pl = new DiseñoAhorca2();
+        DisenioAhorca2 pl = new DisenioAhorca2();
         this.setVisible(false);
         pl.setVisible(true);
     }//GEN-LAST:event_jBFacilActionPerformed
 
     private void jBMedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBMedioActionPerformed
-        DiseñoAhorca2 p1 = new DiseñoAhorca2();
+        DisenioAhorca2 p1 = new DisenioAhorca2();
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBMedioActionPerformed
 
     private void jBDificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBDificilActionPerformed
-        DiseñoAhorca2 p1 = new DiseñoAhorca2();
+        DisenioAhorca2 p1 = new DisenioAhorca2();
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBDificilActionPerformed
 
     private void jBAleatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAleatorioActionPerformed
-        DiseñoAhorca2 p1 = new DiseñoAhorca2();
+        DisenioAhorca2 p1 = new DisenioAhorca2();
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBAleatorioActionPerformed
@@ -225,20 +225,21 @@ public class MenúAhorca2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenúAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenúAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenúAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenúAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MenúAhorca2().setVisible(true);
+                new MenuAhorca2().setVisible(true);
             }
         });
     }

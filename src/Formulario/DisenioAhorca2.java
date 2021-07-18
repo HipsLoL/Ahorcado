@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  * 
  * @author Eduva
  */
-public class DiseñoAhorca2 extends javax.swing.JFrame {
+public class DisenioAhorca2 extends javax.swing.JFrame {
 
     
     public ImageIcon imag[];
@@ -30,7 +30,7 @@ public class DiseñoAhorca2 extends javax.swing.JFrame {
     public int cantg = 0;
     
     
-    public DiseñoAhorca2() {
+    public DisenioAhorca2() {
         initComponents();
         this.setLocationRelativeTo(null);
         /** delimitamos parámetros */
@@ -775,7 +775,7 @@ public class DiseñoAhorca2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jBZActionPerformed
 
     private void jBRegresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRegresaActionPerformed
-        MenúAhorca2 p1 = new MenúAhorca2();
+        MenuAhorca2 p1 = new MenuAhorca2();
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBRegresaActionPerformed
@@ -805,20 +805,21 @@ public class DiseñoAhorca2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DiseñoAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisenioAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DiseñoAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisenioAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DiseñoAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisenioAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DiseñoAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisenioAhorca2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DiseñoAhorca2().setVisible(true);
+                new DisenioAhorca2().setVisible(true);
             }
         });
     }
