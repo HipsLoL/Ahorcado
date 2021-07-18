@@ -176,14 +176,9 @@ public class DiseñoAhorca2 extends javax.swing.JFrame {
                         iniciar();
                         jTWin.setText(String.valueOf(win));
                         if (win == 3) {
-                            int input = JOptionPane.showConfirmDialog(null, "¡Felicidades, ganaste!, regresemos al menú", "Felicidades", JOptionPane.YES_NO_OPTION);
-                            if (input == JOptionPane.YES_OPTION) {
-                                MenúAhorca2 pl = new MenúAhorca2();
-                                this.setVisible(false);
-                                pl.setVisible(true);
-                            } else{
-                                dispose();
-                            }
+                            Ganar pl = new Ganar();
+                            this.setVisible(false);
+                            pl.setVisible(true);
                         }
                         return;
                     }
@@ -198,14 +193,9 @@ public class DiseñoAhorca2 extends javax.swing.JFrame {
                             iniciar();
                             jTFallos.setText(String.valueOf(lose));
                             if (lose == 3) {
-                            int input = JOptionPane.showConfirmDialog(null, "Lo sentimos, perdiste, regresemos al menú", "Oh rayos, nos decepcionaste", JOptionPane.YES_NO_OPTION);
-                            if (input == JOptionPane.YES_OPTION) {
-                                MenúAhorca2 pl = new MenúAhorca2();
-                                this.setVisible(false);
-                                pl.setVisible(true);
-                            } else{
-                                dispose();
-                            }
+                            Perder pl = new Perder();
+                            this.setVisible(false);
+                            pl.setVisible(true);
                         }
                             return;
                         }
