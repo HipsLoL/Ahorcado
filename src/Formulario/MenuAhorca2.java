@@ -175,25 +175,25 @@ public class MenuAhorca2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBFacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBFacilActionPerformed
-        DisenioAhorca2 pl = new DisenioAhorca2();
+        DisenioAhorca2 pl = new DisenioAhorca2(1);
         this.setVisible(false);
         pl.setVisible(true);
     }//GEN-LAST:event_jBFacilActionPerformed
 
     private void jBMedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBMedioActionPerformed
-        DisenioAhorca2 p1 = new DisenioAhorca2();
+        DisenioAhorca2 p1 = new DisenioAhorca2(2);
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBMedioActionPerformed
 
     private void jBDificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBDificilActionPerformed
-        DisenioAhorca2 p1 = new DisenioAhorca2();
+        DisenioAhorca2 p1 = new DisenioAhorca2(3);
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBDificilActionPerformed
 
     private void jBAleatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAleatorioActionPerformed
-        DisenioAhorca2 p1 = new DisenioAhorca2();
+        DisenioAhorca2 p1 = new DisenioAhorca2(4);
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBAleatorioActionPerformed
