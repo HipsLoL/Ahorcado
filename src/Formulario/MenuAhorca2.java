@@ -89,6 +89,11 @@ public class MenuAhorca2 extends javax.swing.JFrame {
         });
 
         jBTeam.setText("Desarrolladores");
+        jBTeam.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBTeamActionPerformed(evt);
+            }
+        });
 
         jBInstrucciones.setText("Instrucciones");
         jBInstrucciones.addActionListener(new java.awt.event.ActionListener() {
@@ -207,6 +212,13 @@ public class MenuAhorca2 extends javax.swing.JFrame {
         this.setVisible(false);
         p1.setVisible(true);
     }//GEN-LAST:event_jBInstruccionesActionPerformed
+
+    private void jBTeamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBTeamActionPerformed
+        // TODO add your handling code here:
+        Programadores p1 = new Programadores();
+        this.setVisible(false);
+        p1.setVisible(true);
+    }//GEN-LAST:event_jBTeamActionPerformed
 
     /**
      * @param args the command line arguments
