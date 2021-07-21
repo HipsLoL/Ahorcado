@@ -84,6 +84,7 @@ public class Ganar extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //Mostramos el menú y ocultamos el formulario de ganar
         MenuAhorca2 p1 = new MenuAhorca2();
         this.setVisible(false);
         p1.setVisible(true);

@@ -37,12 +37,12 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
         opc = opcion;
         initComponents();
         this.setLocationRelativeTo(null);
-        /** delimitamos parámetros */
+        /** Delimitamos parámetros de la cantidad de imagenes, botónes, y palabras que usaremos */
         imag = new ImageIcon[7];
         letras = new JButton[27];
         palabra = new String[20];
         
-        /** Imagenes de ahorcado */
+        /** Imagenes del ahorcado */
         imag[0] = new ImageIcon(getClass().getResource("/Imagenes/ahor1.jpg"));
         imag[1] = new ImageIcon(getClass().getResource("/Imagenes/ahor2.jpg"));
         imag[2] = new ImageIcon(getClass().getResource("/Imagenes/ahor3.jpg"));
@@ -79,101 +79,106 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
         letras[25] = jBY;
         letras[26] = jBZ;
         
-        /** Palabras por adivinar */
-        if (opc == 1) {
-            palabra[0] = "Ardilla".toUpperCase();
-            palabra[1] = "Puma".toUpperCase();
-            palabra[2] = "Elefante".toUpperCase();
-            palabra[3] = "Loro".toUpperCase();
-            palabra[4] = "Cocodrilo".toUpperCase();
-            palabra[5] = "Tigre".toUpperCase();
-            palabra[6] = "Perro".toUpperCase();
-            palabra[7] = "Gato".toUpperCase();
-            palabra[8] = "Leon".toUpperCase();
-            palabra[9] = "Jirafa".toUpperCase();
-            palabra[10] = "Venezuela".toUpperCase();
-            palabra[11] = "Argentina".toUpperCase();
-            palabra[12] = "Chile".toUpperCase();
-            palabra[13] = "China".toUpperCase();
-            palabra[14] = "Rusia".toUpperCase();
-            palabra[15] = "Suecia".toUpperCase();
-            palabra[16] = "Suiza".toUpperCase();
-            palabra[17] = "Brasil".toUpperCase();
-            palabra[18] = "Portugal".toUpperCase();
-            palabra[19] = "EEUU".toUpperCase();
-            
-            jPanel1.setBackground(new Color(90,246,62));
-        }else if (opc == 2) {
-            palabra[0] = "Java".toUpperCase();
-            palabra[1] = "CSharp".toUpperCase();
-            palabra[2] = "Phyton".toUpperCase();
-            palabra[3] = "Visual Basic".toUpperCase();
-            palabra[4] = "PHP".toUpperCase();
-            palabra[5] = "Ruby".toUpperCase();
-            palabra[6] = "TypeScript".toUpperCase();
-            palabra[7] = "Kotlin".toUpperCase();
-            palabra[8] = "Elixir".toUpperCase();
-            palabra[9] = "Pascal".toUpperCase();
-            palabra[10] = "Postscript".toUpperCase();
-            palabra[11] = "ObjectiveC".toUpperCase();
-            palabra[12] = "Scala".toUpperCase();
-            palabra[13] = "Go".toUpperCase();
-            palabra[14] = "Rust".toUpperCase();
-            palabra[15] = "Swift".toUpperCase();
-            palabra[16] = "Scheme".toUpperCase();
-            palabra[17] = "Erlang".toUpperCase();
-            palabra[18] = "Pascal".toUpperCase();
-            palabra[19] = "Lenguaje R".toUpperCase();
-            
-            jPanel1.setBackground(new Color(255,249,149));
-        }else if (opc == 3) {
-            palabra[0] = "Pizza".toUpperCase();
-            palabra[1] = "Hamburguesa".toUpperCase();
-            palabra[2] = "Papas fritas".toUpperCase();
-            palabra[3] = "Carne Asada".toUpperCase();
-            palabra[4] = "Paella".toUpperCase();
-            palabra[5] = "Arroz cantones".toUpperCase();
-            palabra[6] = "Tacos".toUpperCase();
-            palabra[7] = "Burritos".toUpperCase();
-            palabra[8] = "Tortas".toUpperCase();
-            palabra[9] = "Tofu".toUpperCase();
-            palabra[10] = "Gringas".toUpperCase();
-            palabra[11] = "Mazapan".toUpperCase();
-            palabra[12] = "Pupusas".toUpperCase();
-            palabra[13] = "Pollo".toUpperCase();
-            palabra[14] = "Ceviche".toUpperCase();
-            palabra[15] = "Camaron".toUpperCase();
-            palabra[16] = "Arepas".toUpperCase();
-            palabra[17] = "Lasagna".toUpperCase();
-            palabra[18] = "Sushi".toUpperCase();
-            palabra[19] = "Sopa".toUpperCase();
-            
-            jPanel1.setBackground(new Color(243,121,111));
-        }else if (opc == 4) {
-            palabra[0] = "Venezuela".toUpperCase();
-            palabra[1] = "El Salvador".toUpperCase();
-            palabra[2] = "Colombia".toUpperCase();
-            palabra[3] = "Argentina".toUpperCase();
-            palabra[4] = "Brasil".toUpperCase();
-            palabra[5] = "Francia".toUpperCase();
-            palabra[6] = "Canada".toUpperCase();
-            palabra[7] = "Italia".toUpperCase();
-            palabra[8] = "Rusia".toUpperCase();
-            palabra[9] = "EEUU".toUpperCase();
-            palabra[10] = "China".toUpperCase();
-            palabra[11] = "Japon".toUpperCase();
-            palabra[12] = "Corea".toUpperCase();
-            palabra[13] = "Mexico".toUpperCase();
-            palabra[14] = "Alemania".toUpperCase();
-            palabra[15] = "Portugal".toUpperCase();
-            palabra[16] = "Chile".toUpperCase();
-            palabra[17] = "Suiza".toUpperCase();
-            palabra[18] = "Suecia".toUpperCase();
-            palabra[19] = "Inglaterra".toUpperCase();
-            
-            jPanel1.setBackground(new Color(131,195,245));
+        /** Palabras por adivinar y cambios al formulario según la opción escogida en el menú */
+        switch (opc) {
+            case 1:
+                palabra[0] = "Ardilla".toUpperCase();
+                palabra[1] = "Puma".toUpperCase();
+                palabra[2] = "Elefante".toUpperCase();
+                palabra[3] = "Loro".toUpperCase();
+                palabra[4] = "Cocodrilo".toUpperCase();
+                palabra[5] = "Tigre".toUpperCase();
+                palabra[6] = "Perro".toUpperCase();
+                palabra[7] = "Gato".toUpperCase();
+                palabra[8] = "Leon".toUpperCase();
+                palabra[9] = "Jirafa".toUpperCase();
+                palabra[10] = "Venezuela".toUpperCase();
+                palabra[11] = "Argentina".toUpperCase();
+                palabra[12] = "Chile".toUpperCase();
+                palabra[13] = "China".toUpperCase();
+                palabra[14] = "Rusia".toUpperCase();
+                palabra[15] = "Suecia".toUpperCase();
+                palabra[16] = "Suiza".toUpperCase();
+                palabra[17] = "Brasil".toUpperCase();
+                palabra[18] = "Portugal".toUpperCase();
+                palabra[19] = "EEUU".toUpperCase();
+
+                jPanel1.setBackground(new Color(90,246,62));
+                break;
+            case 2:
+                palabra[0] = "Java".toUpperCase();
+                palabra[1] = "CSharp".toUpperCase();
+                palabra[2] = "Phyton".toUpperCase();
+                palabra[3] = "Visual Basic".toUpperCase();
+                palabra[4] = "PHP".toUpperCase();
+                palabra[5] = "Ruby".toUpperCase();
+                palabra[6] = "TypeScript".toUpperCase();
+                palabra[7] = "Kotlin".toUpperCase();
+                palabra[8] = "Elixir".toUpperCase();
+                palabra[9] = "Pascal".toUpperCase();
+                palabra[10] = "Postscript".toUpperCase();
+                palabra[11] = "ObjectiveC".toUpperCase();
+                palabra[12] = "Scala".toUpperCase();
+                palabra[13] = "Go".toUpperCase();
+                palabra[14] = "Rust".toUpperCase();
+                palabra[15] = "Swift".toUpperCase();
+                palabra[16] = "Scheme".toUpperCase();
+                palabra[17] = "Erlang".toUpperCase();
+                palabra[18] = "Pascal".toUpperCase();
+                palabra[19] = "Lenguaje R".toUpperCase();
+
+                jPanel1.setBackground(new Color(255,249,149));
+                break;
+            case 3:
+                palabra[0] = "Pizza".toUpperCase();
+                palabra[1] = "Hamburguesa".toUpperCase();
+                palabra[2] = "Papas fritas".toUpperCase();
+                palabra[3] = "Carne Asada".toUpperCase();
+                palabra[4] = "Paella".toUpperCase();
+                palabra[5] = "Arroz cantones".toUpperCase();
+                palabra[6] = "Tacos".toUpperCase();
+                palabra[7] = "Burritos".toUpperCase();
+                palabra[8] = "Tortas".toUpperCase();
+                palabra[9] = "Tofu".toUpperCase();
+                palabra[10] = "Gringas".toUpperCase();
+                palabra[11] = "Mazapan".toUpperCase();
+                palabra[12] = "Pupusas".toUpperCase();
+                palabra[13] = "Pollo".toUpperCase();
+                palabra[14] = "Ceviche".toUpperCase();
+                palabra[15] = "Camaron".toUpperCase();
+                palabra[16] = "Arepas".toUpperCase();
+                palabra[17] = "Lasagna".toUpperCase();
+                palabra[18] = "Sushi".toUpperCase();
+                palabra[19] = "Sopa".toUpperCase();
+
+                jPanel1.setBackground(new Color(243,121,111));
+                break;
+            case 4:
+                palabra[0] = "Venezuela".toUpperCase();
+                palabra[1] = "El Salvador".toUpperCase();
+                palabra[2] = "Colombia".toUpperCase();
+                palabra[3] = "Argentina".toUpperCase();
+                palabra[4] = "Brasil".toUpperCase();
+                palabra[5] = "Francia".toUpperCase();
+                palabra[6] = "Canada".toUpperCase();
+                palabra[7] = "Italia".toUpperCase();
+                palabra[8] = "Rusia".toUpperCase();
+                palabra[9] = "EEUU".toUpperCase();
+                palabra[10] = "China".toUpperCase();
+                palabra[11] = "Japon".toUpperCase();
+                palabra[12] = "Corea".toUpperCase();
+                palabra[13] = "Mexico".toUpperCase();
+                palabra[14] = "Alemania".toUpperCase();
+                palabra[15] = "Portugal".toUpperCase();
+                palabra[16] = "Chile".toUpperCase();
+                palabra[17] = "Suiza".toUpperCase();
+                palabra[18] = "Suecia".toUpperCase();
+                palabra[19] = "Inglaterra".toUpperCase();
+
+                jPanel1.setBackground(new Color(131,195,245));
+                break;
         }
-        
+        //Se asigna un evento a cada letra para comprobar que exista en la palabra al ser presionada.
         for (int i = 1; i < 27; i++) {
             letras[i].addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -185,26 +190,29 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
     }
     
     public void iniciar() {
-        //Errores en 0
+        //Empezamos con los errores en 0
         fallo = 0;
+        //Colocamos la primer imagen del ahorcado
         jBImagenA.setIcon(imag[0]);
+        //Limpiamos el TextPanel
         jTextPane1.setText("");
-        //para activar las letras del tablero
+        //Habilitamos todas las letras del tablero
         for (int i = 1; i < 27; i++) {
             letras[i].setEnabled(true);
         }
-        //para generar una palabra aleatoriamente xD
+        //Generamos un número aleatorio que hará referencia a una de las palabras (Randomizamos que palabra será seleccionada)
         rndom = (int) 0 + (int) (Math.random() * ((palabra.length - 1) + 1));
+        //Se asignan las categorias
         if (rndom < 10) {
             jLCategoria.setText("Animales");
         } else if (rndom < 20) {
             jLCategoria.setText("Países");
         }
-        //SEPARA EL MENSAJE POR PALABRAS
+        //Separa la palabra por espacios
         String pal[] = palabra[rndom].split(" ");
         res = new String[palabra[rndom].length() + 1];
         int j = 0;
-        // seran los guiones que van debajo de las letras como una separacion_
+        //Cambiamos las letras separadas por guiones 
         for (String pal1 : pal) {
             for (int i = 0; i < pal1.length(); i++) {
                 jTextPane1.setText(jTextPane1.getText() + "_ ");
@@ -214,17 +222,17 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
             res[j++] = " ";
         }
     }
-
-    //al presionar una letra, esta se buscara si pertenece a la palabra, de lo contrario la marcara como error 
+    
+    //Al presionar un botón de letra, buscará si está en la palabra, de lo contrario marcará como error
     public void checarLetra(ActionEvent e) {
         JButton bt = (JButton) e.getSource();
         char c[];
-        //busca la letra en la palabra despues de haber sido presionada
+        //Busca la letra en la palabra después de ser presionada
         for (int i = 1; i < 27; i++) {
             if (bt == letras[i]) {
-                //la tecla es inicializada
+                //La tecla es inicializada
                 c = Character.toChars(64 + i);
-                //busca si la letra esta en la frase
+                //Busca si la letra esta en la palabra
                 boolean esta = false;
                 for (int j = 0; j < palabra[rndom].length(); j++) {
                     if (c[0] == palabra[rndom].charAt(j)) {
@@ -232,7 +240,7 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
                         esta = true;
                     }
                 }
-                //SI LA LETRA ESTA EN EL MENSAJE SE MUESTRA EN EL TEXTPANEL
+                //Si la letra está en la palabra se muestra en el TextPanel 
                 if (esta) {
                     jTextPane1.setText("");
                     for (String re : res) {
@@ -242,21 +250,23 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
                             jTextPane1.setText(jTextPane1.getText() + re + " ");
                         }
                     }
-                    //hace una comprobacion de las letras restantes y faltantes, en caso de que ya no haya letras sera ganador :D
+                    //Busca si quedan letras faltantes por encontrar, si ya no quedan más letras significa que ha ganado
                     boolean gano = true;
                     for (String re : res) {
+                        //Busca si quedan guiones en el TextPanel
                         if (re.equals("_")) {
                             gano = false;
                             break;
                         }
                     }
-                    //al ser correcta se muestra un mensaje y se reinicia el juego
-                    
+                    //Al no quedar letras por adivinar y haber ganado, se muestra un mensaje y avanza a la siguiente ronda
                     if (gano) {
+                        //Declaramos una variable que llevará el contador de cuantas veces se ha adivinado la palabra
                         win++;
                         JOptionPane.showMessageDialog(this, "¡Bien, acertaste!, te faltan " + (3 - win) + " para ganar");
                         iniciar();
                         jTWin.setText(String.valueOf(win));
+                        //Si ya ha ganado 3 veces, se le envía al formulario ganar
                         if (win == 3) {
                             Ganar pl = new Ganar();
                             this.setVisible(false);
@@ -265,15 +275,16 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
                         return;
                     }
                     
-                    //SI LA LETRA NO ESTA EN EL MENSAGE, SE INCREMENTA EL ERROR Y SE CAMBIA LA IMAGEN
+                    //Si la letra no está en la palabra se incrementa +1 el error y cambia la imagen
                     } else {
                         jBImagenA.setIcon(imag[++fallo]);
-                        //SI SE LLEGA A LOS 6 ERRORES ENTONCES SE PIERDE EL JUEGO Y SE MANDA EL MENSAGE DE:
+                        //Si llega a 6 fallos entonces pierde el juego y se suma +1 al contador de fallos totales
                         if (fallo == 6) {
                             lose++;
                             JOptionPane.showMessageDialog(this, "Fallaste, la palabra era: \n" + palabra[rndom] + "\n" + "Tienes " + (3 - lose) + " más");
                             iniciar();
                             jTFallos.setText(String.valueOf(lose));
+                            //Si ya ha perdido 3 veces, se le envía al formulario perder
                             if (lose == 3) {
                             Perder pl = new Perder();
                             this.setVisible(false);
@@ -283,7 +294,7 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
                         }
                     }
                 
-                //esta es la linea que desactiva las letras despues de ser usadas :3
+                //Esta es la linea que desactiva los botones despues de ser usados.
                 bt.setEnabled(false);
                 break;
             }
@@ -558,6 +569,7 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
         jBImagenA.setToolTipText("");
 
         jTextPane1.setFont(new java.awt.Font("Sitka Text", 1, 11)); // NOI18N
+        jTextPane1.setEnabled(false);
         jScrollPane1.setViewportView(jTextPane1);
 
         jBAgain.setFont(new java.awt.Font("Sitka Text", 1, 11)); // NOI18N
@@ -879,12 +891,36 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
 
     private void jBAgainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAgainActionPerformed
         repe++;
-        if (repe == 3) {
+        if (opc == 1) {
+            if (repe == 3) {
             jBAgain.setEnabled(false);
             JOptionPane.showMessageDialog(this, "Ya agotaste las oportunidades de cambiar palabra, \n"
                                                 + "ahora todo queda en tus manos, suerte");
+            }
+            iniciar();
+        }else if (opc == 2) {
+            if (repe == 2) {
+            jBAgain.setEnabled(false);
+            JOptionPane.showMessageDialog(this, "Ya agotaste las oportunidades de cambiar palabra, \n"
+                                                + "ahora todo queda en tus manos, suerte");
+            }
+            iniciar();
+        }else if (opc == 3) {
+            if (repe == 1) {
+            jBAgain.setEnabled(false);
+            JOptionPane.showMessageDialog(this, "Ya agotaste las oportunidades de cambiar palabra, \n"
+                                                + "ahora todo queda en tus manos, suerte");
+            }
+            iniciar();
+        }else if (opc == 4) {
+            if (repe == 3) {
+            jBAgain.setEnabled(false);
+            JOptionPane.showMessageDialog(this, "Ya agotaste las oportunidades de cambiar palabra, \n"
+                                                + "ahora todo queda en tus manos, suerte");
+            }
+            iniciar();
         }
-        iniciar();
+        
     }//GEN-LAST:event_jBAgainActionPerformed
 
     private void jBÑActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBÑActionPerformed

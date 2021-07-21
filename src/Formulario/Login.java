@@ -104,15 +104,20 @@ public class Login extends javax.swing.JFrame {
 
     private void jBIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBIngresarActionPerformed
 
+        //Iniciamos la clase
         Usuario usuario = new Usuario();
         try{
+            //Comprobamos si el campo de ingreso del nombre esta vacío.
             if(jTNombreU.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(this,"Debe ingresar un nombre :D","¡Ingresa un nombre!",JOptionPane.ERROR_MESSAGE);
             }
             else {
+                //Guardamos el dato que se ingresa en una variable.
                 String nombreUsu = String.valueOf(jTNombreU.getText());
+                //Transferimos el dato de nombreUsu a la variable de la Clase Usuario.
                 usuario.setNombreU(nombreUsu);
                 
+                //Siguiente a eso mostramos el siguiente formulario (Menú).
                 MenuAhorca2 p1 = new MenuAhorca2();
                 this.setVisible(false);
                 p1.setVisible(true);
