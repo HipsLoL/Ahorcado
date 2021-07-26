@@ -40,7 +40,7 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
         /** Delimitamos parámetros de la cantidad de imagenes, botónes, y palabras que usaremos */
         imag = new ImageIcon[7];
         letras = new JButton[27];
-        palabra = new String[20];
+        palabra = new String[25];
         
         /** Imagenes del ahorcado */
         imag[0] = new ImageIcon(getClass().getResource("/Imagenes/ahor1.jpg"));
@@ -82,98 +82,118 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
         /** Palabras por adivinar y cambios al formulario según la opción escogida en el menú */
         switch (opc) {
             case 1:
-                palabra[0] = "Ardilla".toUpperCase();
-                palabra[1] = "Puma".toUpperCase();
+                palabra[0] = "Perro".toUpperCase();//Animales
+                palabra[1] = "Gato".toUpperCase();
                 palabra[2] = "Elefante".toUpperCase();
-                palabra[3] = "Loro".toUpperCase();
-                palabra[4] = "Cocodrilo".toUpperCase();
-                palabra[5] = "Tigre".toUpperCase();
-                palabra[6] = "Perro".toUpperCase();
-                palabra[7] = "Gato".toUpperCase();
-                palabra[8] = "Leon".toUpperCase();
-                palabra[9] = "Jirafa".toUpperCase();
-                palabra[10] = "Venezuela".toUpperCase();
-                palabra[11] = "Argentina".toUpperCase();
-                palabra[12] = "Chile".toUpperCase();
-                palabra[13] = "China".toUpperCase();
-                palabra[14] = "Rusia".toUpperCase();
-                palabra[15] = "Suecia".toUpperCase();
-                palabra[16] = "Suiza".toUpperCase();
-                palabra[17] = "Brasil".toUpperCase();
-                palabra[18] = "Portugal".toUpperCase();
-                palabra[19] = "EEUU".toUpperCase();
+                palabra[3] = "Jirafa".toUpperCase();
+                palabra[4] = "Tigre".toUpperCase();
+                palabra[5] = "Argentina".toUpperCase();//Países
+                palabra[6] = "China".toUpperCase();
+                palabra[7] = "Japon".toUpperCase();
+                palabra[8] = "ElSalvador".toUpperCase();
+                palabra[9] = "Colombia".toUpperCase();
+                palabra[10] = "JustinBieber".toUpperCase();//Cantantes
+                palabra[11] = "ArianaGrande".toUpperCase();
+                palabra[12] = "BadBunny".toUpperCase();
+                palabra[13] = "JBalvin".toUpperCase();
+                palabra[14] = "LuisMiguel".toUpperCase();
+                palabra[15] = "Carne".toUpperCase();//Comida
+                palabra[16] = "Hamburguesa".toUpperCase();
+                palabra[17] = "Pollo".toUpperCase();
+                palabra[18] = "Pupusas".toUpperCase();
+                palabra[19] = "Tacos".toUpperCase();
+                palabra[20] = "Java".toUpperCase();//Programación
+                palabra[21] = "CSharp".toUpperCase();
+                palabra[22] = "Javascript".toUpperCase();
+                palabra[23] = "SQL".toUpperCase();
+                palabra[24] = "PHP".toUpperCase();
 
                 jPanel1.setBackground(new Color(90,246,62));
                 break;
             case 2:
-                palabra[0] = "Java".toUpperCase();
-                palabra[1] = "CSharp".toUpperCase();
-                palabra[2] = "Phyton".toUpperCase();
-                palabra[3] = "Visual Basic".toUpperCase();
-                palabra[4] = "PHP".toUpperCase();
-                palabra[5] = "Ruby".toUpperCase();
-                palabra[6] = "TypeScript".toUpperCase();
-                palabra[7] = "Kotlin".toUpperCase();
-                palabra[8] = "Elixir".toUpperCase();
-                palabra[9] = "Pascal".toUpperCase();
-                palabra[10] = "Postscript".toUpperCase();
-                palabra[11] = "ObjectiveC".toUpperCase();
-                palabra[12] = "Scala".toUpperCase();
-                palabra[13] = "Go".toUpperCase();
-                palabra[14] = "Rust".toUpperCase();
-                palabra[15] = "Swift".toUpperCase();
-                palabra[16] = "Scheme".toUpperCase();
-                palabra[17] = "Erlang".toUpperCase();
-                palabra[18] = "Pascal".toUpperCase();
-                palabra[19] = "Lenguaje R".toUpperCase();
+                palabra[0] = "Cebra".toUpperCase();//Animales
+                palabra[1] = "Puma".toUpperCase();
+                palabra[2] = "Avestruz".toUpperCase();
+                palabra[3] = "Koala".toUpperCase();
+                palabra[4] = "Cocodrilo".toUpperCase();
+                palabra[5] = "Venezuela".toUpperCase();//Países
+                palabra[6] = "Guatemala".toUpperCase();
+                palabra[7] = "Suiza".toUpperCase();
+                palabra[8] = "Rusia".toUpperCase();
+                palabra[9] = "Vietnam".toUpperCase();
+                palabra[10] = "theWeeknd".toUpperCase();//Cantantes
+                palabra[11] = "PauloLondra".toUpperCase();
+                palabra[12] = "DaddyYankee".toUpperCase();
+                palabra[13] = "DuaLipa".toUpperCase();
+                palabra[14] = "Drake".toUpperCase();
+                palabra[15] = "Burritos".toUpperCase();//Comida
+                palabra[16] = "Tortas".toUpperCase();
+                palabra[17] = "Ceviche".toUpperCase();
+                palabra[18] = "Sushi".toUpperCase();
+                palabra[19] = "Lasagna".toUpperCase();
+                palabra[20] = "VisualBasic".toUpperCase();//Programación
+                palabra[21] = "Pascal".toUpperCase();
+                palabra[22] = "Python".toUpperCase();
+                palabra[23] = "Ruby".toUpperCase();
+                palabra[24] = "LenguajeC".toUpperCase();
 
                 jPanel1.setBackground(new Color(255,249,149));
                 break;
             case 3:
-                palabra[0] = "Pizza".toUpperCase();
-                palabra[1] = "Hamburguesa".toUpperCase();
-                palabra[2] = "Papas fritas".toUpperCase();
-                palabra[3] = "Carne Asada".toUpperCase();
-                palabra[4] = "Paella".toUpperCase();
-                palabra[5] = "Arroz cantones".toUpperCase();
-                palabra[6] = "Tacos".toUpperCase();
-                palabra[7] = "Burritos".toUpperCase();
-                palabra[8] = "Tortas".toUpperCase();
-                palabra[9] = "Tofu".toUpperCase();
-                palabra[10] = "Gringas".toUpperCase();
-                palabra[11] = "Mazapan".toUpperCase();
-                palabra[12] = "Pupusas".toUpperCase();
-                palabra[13] = "Pollo".toUpperCase();
-                palabra[14] = "Ceviche".toUpperCase();
-                palabra[15] = "Camaron".toUpperCase();
-                palabra[16] = "Arepas".toUpperCase();
-                palabra[17] = "Lasagna".toUpperCase();
-                palabra[18] = "Sushi".toUpperCase();
-                palabra[19] = "Sopa".toUpperCase();
+                palabra[0] = "Cachalote".toUpperCase();//Animales
+                palabra[1] = "Orca".toUpperCase();
+                palabra[2] = "Manati".toUpperCase();
+                palabra[3] = "Orangutan".toUpperCase();
+                palabra[4] = "Bagre".toUpperCase();
+                palabra[5] = "Croacia".toUpperCase();//Países
+                palabra[6] = "Polonia".toUpperCase();
+                palabra[7] = "Filipinas".toUpperCase();
+                palabra[8] = "Guinea".toUpperCase();
+                palabra[9] = "Nigeria".toUpperCase();
+                palabra[10] = "DojaCat".toUpperCase();//Cantantes
+                palabra[11] = "GunandRoses".toUpperCase();
+                palabra[12] = "Maneskin".toUpperCase();
+                palabra[13] = "Khalid".toUpperCase();
+                palabra[14] = "KiddKeo".toUpperCase();
+                palabra[15] = "Hongos".toUpperCase();//Comida
+                palabra[16] = "TerneraWagyu".toUpperCase();
+                palabra[17] = "Omelette".toUpperCase();
+                palabra[18] = "Caviar".toUpperCase();
+                palabra[19] = "Coctel".toUpperCase();
+                palabra[20] = "Assembly".toUpperCase();//Programación
+                palabra[21] = "LenguajeR".toUpperCase();
+                palabra[22] = "Groovy".toUpperCase();
+                palabra[23] = "MATLAB".toUpperCase();
+                palabra[24] = "Go".toUpperCase();
 
                 jPanel1.setBackground(new Color(243,121,111));
                 break;
             case 4:
-                palabra[0] = "Venezuela".toUpperCase();
-                palabra[1] = "El Salvador".toUpperCase();
-                palabra[2] = "Colombia".toUpperCase();
-                palabra[3] = "Argentina".toUpperCase();
-                palabra[4] = "Brasil".toUpperCase();
-                palabra[5] = "Francia".toUpperCase();
-                palabra[6] = "Canada".toUpperCase();
-                palabra[7] = "Italia".toUpperCase();
-                palabra[8] = "Rusia".toUpperCase();
-                palabra[9] = "EEUU".toUpperCase();
-                palabra[10] = "China".toUpperCase();
-                palabra[11] = "Japon".toUpperCase();
-                palabra[12] = "Corea".toUpperCase();
-                palabra[13] = "Mexico".toUpperCase();
-                palabra[14] = "Alemania".toUpperCase();
-                palabra[15] = "Portugal".toUpperCase();
-                palabra[16] = "Chile".toUpperCase();
-                palabra[17] = "Suiza".toUpperCase();
-                palabra[18] = "Suecia".toUpperCase();
-                palabra[19] = "Inglaterra".toUpperCase();
+                palabra[0] = "Tortuga".toUpperCase();//Animales
+                palabra[1] = "Perro".toUpperCase();
+                palabra[2] = "Leon".toUpperCase();
+                palabra[3] = "Elefante".toUpperCase();
+                palabra[4] = "Cebra".toUpperCase();
+                palabra[5] = "Alemania".toUpperCase();//Países
+                palabra[6] = "Guatemala".toUpperCase();
+                palabra[7] = "Honduras".toUpperCase();
+                palabra[8] = "Chile".toUpperCase();
+                palabra[9] = "Argetina".toUpperCase();
+                palabra[10] = "DojaCat".toUpperCase();//Cantantes
+                palabra[11] = "Queen".toUpperCase();
+                palabra[12] = "KatyPerry".toUpperCase();
+                palabra[13] = "DuaLipa".toUpperCase();
+                palabra[14] = "KiddKeo".toUpperCase();
+                palabra[15] = "Sushi".toUpperCase();//Comida
+                palabra[16] = "Hongos".toUpperCase();
+                palabra[17] = "Lasagna".toUpperCase();
+                palabra[18] = "Pollo".toUpperCase();
+                palabra[19] = "Coctel".toUpperCase();
+                palabra[20] = "VisualBasic".toUpperCase();//Programación
+                palabra[21] = "Pascal".toUpperCase();
+                palabra[22] = "CSharp".toUpperCase();
+                palabra[23] = "Java".toUpperCase();
+                palabra[24] = "Go".toUpperCase();
 
                 jPanel1.setBackground(new Color(131,195,245));
                 break;
@@ -203,10 +223,16 @@ public class DisenioAhorca2 extends javax.swing.JFrame {
         //Generamos un número aleatorio que hará referencia a una de las palabras (Randomizamos que palabra será seleccionada)
         rndom = (int) 0 + (int) (Math.random() * ((palabra.length - 1) + 1));
         //Se asignan las categorias
-        if (rndom < 10) {
+        if (rndom < 5) {
             jLCategoria.setText("Animales");
-        } else if (rndom < 20) {
+        } else if (rndom < 10 && rndom > 4) {
             jLCategoria.setText("Países");
+        } else if (rndom < 15 && rndom > 9) {
+            jLCategoria.setText("Cantantes");
+        } else if (rndom < 20 && rndom > 14) {
+           jLCategoria.setText("Comida"); 
+        } else if (rndom < 25 && rndom > 19) {
+            jLCategoria.setText("Lenguaje de Programación");
         }
         //Separa la palabra por espacios
         String pal[] = palabra[rndom].split(" ");
